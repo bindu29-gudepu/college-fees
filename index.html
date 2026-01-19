@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Fees Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 College Fees Chatbot</h1>
+        <div id="chatbox">
+            <p class="bot"><b>Bot:</b> Hello! Ask me about college fees. Example: "BTech CS"</p>
+        </div>
+        <div class="input-area">
+            <input type="text" id="msg" placeholder="Type your question here..." onkeypress="if(event.key === 'Enter'){ sendMsg(); }"/>
+            <button onclick="sendMsg()">Send</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
